@@ -1,0 +1,48 @@
+body {
+     font-family:verdana;
+     text-align:center;
+}
+
+h1 {
+   color:blue;
+}
+.link-list {
+ list-style-type:none;
+}
+.link-list li {
+	   display:table-cell;
+	   valign:middle;
+	   font-size:1.2em;
+	   line-height:1.5em;
+}
+
+.thumbnail {
+	   max-width:200px;
+}
+.j_image {
+/*	 max-width:1000px;*/
+	 max-width:60%;
+	 max-height:50%;
+
+}
+
+.table-wrap {
+    width:1000px;
+    margin:auto;
+}
+.index-table {
+    width:600px;
+    margin:auto;
+}
+
+.index-table td {
+    text-align:center;
+    width:150px;
+    padding:15px;
+    font-size:1.2em;
+}
+
+#dialog {
+    text-align:center;
+    background:white;
+}
