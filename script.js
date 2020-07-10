@@ -3,7 +3,7 @@ function log (s) {
         window.console.log(s);
 }
 
-var image_name_re = /images\/(.*)\.jpg/;;
+var image_name_re = /thumbnails\/(.*)\.jpg/;;
 
 $(function () {
 

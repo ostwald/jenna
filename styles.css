@@ -18,6 +18,7 @@ h1 {
 
 .thumbnail {
 	   max-width:200px;
+	   cursor:pointer;
 }
 .j_image {
 	 max-width:90%;
