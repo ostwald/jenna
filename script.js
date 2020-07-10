@@ -7,8 +7,6 @@ var image_name_re = /images\/(.*)\.jpg/;;
 
 $(function () {
 
-    $( "#dialog").dialog({autoOpen:false});
-
     $('img.thumbnail')
         .click (function (event) {
 
@@ -18,19 +16,13 @@ $(function () {
             } else {
                 var name = m[1]
                 log (name + ' was clicked')
-                $('#dialog img.j_image').attr('src', 'images/'+name+'.jpg')
+                $('#pop-up img.j_image').attr('src', 'images/'+name+'.jpg')
             }
-            $( "#dialog").dialog({
-                width:'80%',
-                maxHeight:'80%',
-                title:name,
-                position:{ my: "top", at: "top+50", of: window },
-                modal:true
 
-            })
-            $( "#dialog" ).dialog( "open" );
+            event.preventDefault();
 
-            event.preventDefault()
+            this.blur();
+            $('#pop-up').appendTo('body').modal()
         })
 
 });
