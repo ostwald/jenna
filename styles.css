@@ -1,6 +1,7 @@
 body {
      font-family:verdana;
      text-align:center;
+     background:lightblue;
 }
 
 h1 {
@@ -19,9 +20,12 @@ h1 {
 .thumbnail {
 	   max-width:200px;
 	   cursor:pointer;
+	   border:black 5px solid;
 }
 .j_image {
 	 max-width:90%;
+	 border:black 10px solid;
+	 border-radius:12px;
 }
 
 .table-wrap {
